@@ -8,7 +8,7 @@ ENV WORDPRESS_DB_PASSWORD=example
 ENV WORDPRESS_DB_NAME=wordpress_db
 
 # Copy your custom theme into the container
-COPY ./WordPress-Project /var/www/html/wp-content/themes/WordPress-Project
+COPY . /var/www/html/wp-content/themes/WordPress-Project
 
 # Set the working directory
 WORKDIR /var/www/html
